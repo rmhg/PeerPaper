@@ -10,8 +10,22 @@
 This Is Centrilized Version, So It Requires A Server To Resolve UID to Addressing Info.
 
 
-## Download
+## To Do
+1. Resolve UI Bug.
+2. Integrate [D.A.R.N]() For Decentrilization.
+3. Resolve Server Bugs.
+4. Improve Client UI.
 
-Android : [PeerPaper](raw/Build/app-release.apk) 
+## Current Status
+1. Server Is Working But Have Some Bugs And Not Yet, Hosted On Internet.
+2. Able To Discover Local Clients.
+3. Able To Connect With Peers.
+
+## Link
+
+Download Android Client : [PeerPaper](raw/Build/app-release.apk) 
 > Android Version Should Be At Least >= 5.0 
+Trello Board Link : [Not Yet Linked](#)
+WebSite : [Not Yet Linked](#)
+
 

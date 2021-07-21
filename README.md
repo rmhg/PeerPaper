@@ -23,8 +23,9 @@ This Is Centrilized Version, So It Requires A Server To Resolve UID to Addressin
 
 ## Link
 
-Download Android Client : [PeerPaper](raw/Build/app-release.apk) 
-> Android Version Should Be At Least >= 5.0 
+Download Android Client : [v0.01](raw/Build/app-release.apk) 
+> Android Version Should Be At Least >= 5.0 .
+
 Trello Board Link : [Not Yet Linked](#)
 WebSite : [Not Yet Linked](#)
 

@@ -1,0 +1,39 @@
+SIZE_OF_MESSAGE
+{
+	"type" : "Type Of Req/Res",
+	"status" : "Status Of Res (O in case Of Req)",
+	"obj" :  {
+		"objname" : "Obj_Name",
+		"Obj_Name" : {
+			"This Object"
+		}
+	}
+}
+
+..Types Of Objs..
+1. Registration
+2. Authentication
+3. FindPeer
+4. ConnectPeer
+6. Update
+
+
+Server Object
+1. AuthToken
+2. Status
+3. ConnectReqObj (This Peer Want To Connect To You)
+4. Connection
+
+
+SIZE_OF_MESSAGE
+{
+	"type" : "Type Of Req/Res",
+	"status" : "Status Of Res",
+	
+	"obj" :  {
+		"objname" : "Obj_Name",
+		"Obj_Name" : {
+			"This Object"
+		}
+	}
+}

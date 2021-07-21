@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PeerPaper</string>
+    <string name="first_menu_text">Use A Configured Server And Use Simple UID To Connect With Peers.</string>
+    <string name="second_menu_text">Use Socket To Connect With Peers Or Reconfigure Defaults And Connect With Locals.</string>
+    <string name="login">LOGIN</string>
+    <string name="reg">REGISTER</string>
+
+    <string name="setting">SETTINGS</string>
+    <string name="manual">MANUAL</string>
+</resources>

@@ -1,0 +1,60 @@
+Roles
+
+Main Server Thread:
+    Server Being In Main Thread
+    It Listen On Given Interface Address And Port(TCP)
+    When It Recieve It Simply At That To General Service List
+    And Move On To Listen For Other Connection.
+
+Service List:
+    This List Contains The Connection That Need To Be Serviced
+
+Service Worker:
+    These Are Thread That Service The "Client" On Service Thread,
+    For That They Call An Handler, And After That Either Close The Connection, 
+    Or Move It To ActiveList
+
+ActiveList :
+    This List Contains A List Of Client That Have Still Have There Connection And Logged In, 
+    And They Are Sending Update Message Continously, If Any Of Them Ask For Service Then A Thread
+    Called "Daemon", Will Move Them To Service List And May Be Send A Message To Wait For Service.
+
+Daemon Thread:
+    This Thread Scans The ActiveList And Check If For 
+    Any Message If Any Client Didnt Send Message For A
+    Given Period Of Time Then It Simply Closes Those Connection 
+    And Remove From ActiveList.
+
+    If ActiveList Is Empty Then Daemon Thread Will Be Put It Self To Sleep,
+    Until Server Thread Populate The ActiveList And Therefore Wakeup The Daemon
+    Thread
+
+Handler:
+    Handler Have Defination For Various Kind Of Implementation To Handle Different Kind Of Handler,
+    First Service Thread Calls Parse To Parse Handle Context, And Dispact Appropiate Handle,
+    If Any Exception Occur Then Service Worker Simply Closes Client Connection,
+
+    Handler Also Contains Various FieldValidator.
+
+Database API : 
+    API To Interface With Database.
+
+Database Tables:
+    1. AllList :
+        It Contains User Information Of Those User Which Are Registered, On The Server For A Given Service.
+        This Table Contains Following Rows:
+            - SID (AutoIonc Integer Value, Primary Key)
+            - Username (Unique/Foreign Key),
+            - Passphrase (Text),
+            - Pbinfo_Name (Text),
+            - Pbinfo_About (Text),
+            - Discover (Boolean)
+
+    2. ActiveList
+        It Contains Users Info Who Are Logged In
+        It Contains Following Field,
+            - SID,
+            - Username (Foregin Key),
+            - TokenID (Text),
+            - TokenStr(Text),
+            - LastUpdate (Timestamp)

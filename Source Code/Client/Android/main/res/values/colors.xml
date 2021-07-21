@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="lighttest">#555555</color>
+
+    <color name="dis_back_peer">#ee1100</color>
+    <color name="conn_back_peer">#00dd00</color>
+    <color name="pend_back_peer">#0099ff</color>
+    <color name="req_back_peer">#bbbb00</color>
+    <color name="dis_stat_peer">#ff00</color>
+    <color name="conn_stat_peer">#00ff00</color>
+    <color name="pend_stat_peer">#0000ff</color>
+    <color name="req_stat_peer">#ffff00</color>
+
+    <color name="second_menu_color">#1856B7</color>
+    <color name="first_menu_color">#6A57F0</color>
+
+
+</resources>

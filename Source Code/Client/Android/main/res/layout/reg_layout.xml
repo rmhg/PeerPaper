@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!-- UID -->
+            <EditText
+                android:id="@+id/uidreg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="100dp"
+                android:hint="UID" />
+            <!-- PASSWORD -->
+            <EditText
+                android:id="@+id/passreg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="100dp"
+                android:hint="Password" />
+            <!-- Confirm Password -->
+            <EditText
+                android:id="@+id/confirmpassreg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="100dp"
+                android:hint="Confirm Password" />
+            <!-- Discover(SWITCH) -->
+            <Switch
+                android:id="@+id/discoverreg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="100dp"
+                android:text="Discovery" />
+            <!-- Public Name -->
+            <EditText
+                android:id="@+id/pnamereg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="100dp"
+                android:hint="Public Name" />
+            <!-- Public About -->
+            <EditText
+                android:id="@+id/paboutreg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="50dp"
+                android:hint="Public About" />
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/clearreg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:textSize="25dp"
+            android:text="Clear" />
+
+        <Button
+            android:id="@+id/continuereg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textSize="25dp"
+            android:layout_margin="2dp"
+            android:text="Continue" />
+    </LinearLayout>
+
+</LinearLayout>

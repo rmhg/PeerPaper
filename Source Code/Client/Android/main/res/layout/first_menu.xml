@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/first_menu_color">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/butrootfmenu"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/white"
+        android:layout_margin="50dp"
+
+        android:autoSizeTextType="uniform"
+        app:autoSizeTextType="uniform"
+        android:text="@string/first_menu_text"
+
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/butrootfmenu"
+        >
+
+    <Button
+
+        android:id="@+id/loginmenu"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/login"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/regmenu"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="@color/white"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/reg"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+    </LinearLayout>
+
+</RelativeLayout>
